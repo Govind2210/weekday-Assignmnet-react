@@ -2,9 +2,8 @@ import { Box, Grid, TextField } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { APPLY_FILTERS } from "../../redux/action.types";
 
-// components
+
 import MultiSelect from "../multiselect/MultiSelect";
-// utils & static data
 import {
   ROLES,
   NUMBER_OF_EMPLOYEES_OPTIONS,
@@ -67,28 +66,19 @@ const FilterGroup = () => {
   return (
     <Box sx={{ flexGrow: 1, marginBottom: 2, marginTop: 1, padding: 2 }}>
       <Grid container spacing={2} justifyContent="center">
-        {/* Roles filter */}
-        <Grid item xs={12} sm="auto" sx={{ minWidth: "280px" }}>
+        <Grid item xs={12} sm="auto" sx={{ minWidth: "260px" }}>
           <MultiSelect {...filters.roles} />
         </Grid>
-        {/* no. of employee filter */}
-        {/* <Grid item xs={12} sm="auto" sx={{ minWidth: "280px" }}>
-          <MultiSelect {...filters.employees} />
-        </Grid> */}
-        {/* experience filter */}
-        <Grid item xs={12} sm="auto" sx={{ minWidth: "280px" }}>
+        <Grid item xs={12} sm="auto" sx={{ minWidth: "260px" }}>
           <MultiSelect {...filters.experience} />
         </Grid>
-        {/* location filter */}
-        <Grid item xs={12} sm="auto" sx={{ minWidth: "280px" }}>
+        <Grid item xs={12} sm="auto" sx={{ minWidth: "260px" }}>
           <MultiSelect {...filters.mode} />
         </Grid>
-        {/* minimum salary filter */}
-        <Grid item xs={12} sm="auto" sx={{ minWidth: "280px" }}>
+        <Grid item xs={12} sm="auto" sx={{ minWidth: "260px" }}>
           <MultiSelect {...filters.minSalary} />
         </Grid>
-        {/* company name search filter */}
-        <Grid item xs={12} sm="auto" sx={{ minWidth: "280px" }}>
+        <Grid item xs={12} sm="auto" sx={{ minWidth: "260px" }}>
           <TextField fullWidth variant="outlined" {...filters.companyName} />
         </Grid>
       </Grid>

@@ -1,15 +1,3 @@
-export const ROLES = [
-  { label: "Backend", id: "1", value: "backend" },
-  { label: "Frontend", id: "2", value: "frontend" },
-  { label: "Fullstack", id: "3", value: "fullstack" },
-  { label: "Android", id: "5", value: "android" },
-  { label: "IOS", id: "6", value: "ios" },
-  { label: "Flutter", id: "7", value: "flutter" },
-  { label: "Tech Lead", id: "8", value: "tech lead" },
-  { label: "Dev-Ops", id: "9", value: "dev-ops" },
-  { label: "Data Science", id: "10", value: "data science" },
-];
-
 export const NUMBER_OF_EMPLOYEES_OPTIONS = [
   { label: "1-10", id: "1", value: "1-10" },
   { label: "11-20", id: "2", value: "11-20" },
@@ -120,4 +108,16 @@ export const MIN_SALARY_OPTIONS = [
     id: "8",
     value: 70,
   },
+];
+
+export const ROLES = [
+  { label: "Fullstack", id: "1", value: "fullstack" },
+  { label: "Frontend", id: "2", value: "frontend" },
+  { label: "Backend", id: "3", value: "backend" },
+  { label: "Data Science", id: "4", value: "data science" },
+  { label: "Android", id: "5", value: "android" },
+  { label: "IOS", id: "6", value: "ios" },
+  { label: "Flutter", id: "7", value: "flutter" },
+  { label: "Tech Lead", id: "8", value: "tech lead" },
+  { label: "Dev-Ops", id: "9", value: "dev-ops" },
 ];

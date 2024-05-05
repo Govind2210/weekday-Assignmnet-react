@@ -1,9 +1,6 @@
-// components
 import { useState } from "react";
-// components
 import Button from "../button/Button";
 import { JdViewMoreModal } from "../modals";
-// styles
 import "./Card.css";
 
 const Card = (props) => {
@@ -23,18 +20,7 @@ const Card = (props) => {
   return (
     <div className="CardContainer">
       <section className="CardHeader">
-        <div className="PostedOnDate">⏳ Posted 3 days ago</div>
-        <div
-          className="MatchScoreContainer"
-          role="progressbar"
-          aria-valuenow="75"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <div>
-            <span>75%</span>
-          </div>
-        </div>
+        <div className="PostedOnDate">⏳ Posted 1 days ago</div>
       </section>
       <section className="Details">
         <section className="Metadata">
@@ -82,7 +68,7 @@ const Card = (props) => {
         text={"Unlock referral asks"}
         className={""}
         variant="secondary"
-        // onClickHandler={handleApply}
+        onClickHandler={handleApply}
       />
       <JdViewMoreModal
         open={open}
